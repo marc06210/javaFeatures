@@ -5,7 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 /*
-mismatch method compares 2 filesand retuns the position of the first different byte.
+mismatch method compares 2 files and retuns the position of the first different byte.
 if both files are identical, then return -1
  */
 public class FilesMismatchMethod {

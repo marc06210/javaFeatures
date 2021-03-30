@@ -3,7 +3,6 @@ package com.mgu.java14;
 import static java.util.Calendar.*;
 
 /*
- * https://openjdk.java.net/jeps/354
  * yield is introduced to make a difference between the value returned by a switch (which is not a function)
  * and the value returned by a function (which is sent back by return)
  */
