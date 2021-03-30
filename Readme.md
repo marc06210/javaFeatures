@@ -35,7 +35,7 @@ Support of Unicode 10.
 
 ## Java 10
 
-New way to create unmodifiable list.
+New way to create unmodifiable list from a **Stream**: **Collectors.toUnmodifiableList()**.
 
 New keyword **var** to create local variables.
 
