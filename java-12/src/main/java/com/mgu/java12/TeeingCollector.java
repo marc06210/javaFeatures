@@ -4,14 +4,14 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /*
-Composition de deux collectors.
-Chaque élément est traité par chacun des collectors.
-A la fin le résultat des deux collectors est envoyée à un fonction de merge.
+Composition of two collectors.
+Each element is treated by both collectors.
+When done the result of the two collectors is injected into a merge function.
 
-L'exemple suivant trouve la moyenne d'une liste de double.
-Les premier collector calcule la somme totale des élements.
-Le deuxième collector calcule le nombre d'éléments.
-La fonction de merge divise la somme par le nombre d'élements.
+The following example returns the average value of a list of doubles.
+First collector sum all values.
+Second collector counts number of values.
+The merge function divides the sum by the number of elements.
  */
 public class TeeingCollector {
 

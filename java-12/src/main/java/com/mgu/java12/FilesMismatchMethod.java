@@ -5,10 +5,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 /*
-mismatch method compare deux fichiers et renvoie la position du premier octet qui diverge.
-si les deux fichiers sont égaux alors -1 est renvoyé
+mismatch method compares 2 filesand retuns the position of the first different byte.
+if both files are identical, then return -1
  */
-public class FileMismatchMethod {
+public class FilesMismatchMethod {
     public static void main(String[] args) throws IOException {
         Path filePath1 = Files.createTempFile("file1", ".txt");
         Path filePath2 = Files.createTempFile("file2", ".txt");
