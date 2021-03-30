@@ -31,6 +31,12 @@ Keyword **var** now possible in lambda.
 
 Possibility to use a **not()** predicate.
 
+String some new useful methods: **lines**, **strip**...
+
+Method **toArray** added to **Collection**.
+
+Methods **readString** and **writeString** added to **Files**.
+
 Support of Unicode 10.
 
 ## Java 10
