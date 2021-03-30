@@ -34,6 +34,9 @@ Possibility to use a **not()** predicate.
 Support of Unicode 10.
 
 ## Java 10
+
 New way to create unmodifiable list.
 
 New keyword **var** to create local variables.
+
+New method **orElseThrow()** for **Optional**.
