@@ -16,16 +16,16 @@ public class NotPredicateSample {
     }
 
     static void oldWay() {
-        List<String> result = originals.stream()
+        var listOfNotEmptyStrings = originals.stream()
                 .filter(string -> !string.isEmpty())
                 .collect(Collectors.toUnmodifiableList());
-        System.out.println(result);
+        System.out.println(listOfNotEmptyStrings);
     }
 
     static void newWay() {
-        List<String> result = originals.stream()
+        var listOfNotEmptyStrings = originals.stream()
                 .filter(not(String::isEmpty))
                 .collect(Collectors.toUnmodifiableList());
-        System.out.println(result);
+        System.out.println(listOfNotEmptyStrings);
     }
 }
