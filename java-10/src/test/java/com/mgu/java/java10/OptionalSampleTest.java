@@ -12,15 +12,20 @@ public class OptionalSampleTest {
     public void orElseThrow() {
         var listOfTenInt = Stream.of(10).collect(Collectors.toUnmodifiableList());
 
-        var five = listOfTenInt.stream()
-                .filter(i -> i>5)
-                .findFirst()
-                .orElseThrow();
+        Assertions.assertThrows(NoSuchElementException.class,
+                () -> {
+                    Integer a = listOfTenInt.stream()
+                            .filter(i -> i > 10)
+                            .findFirst()
+                            .orElseThrow(() -> new NoSuchElementException("element not found"));
+                });
 
         Assertions.assertThrows(NoSuchElementException.class,
-                () -> listOfTenInt.stream()
+                () -> {
+                    Integer a = listOfTenInt.stream()
                     .filter(i -> i>10)
                     .findFirst()
-                    .orElseThrow());
+                    .orElseThrow();
+                });
     }
 }
