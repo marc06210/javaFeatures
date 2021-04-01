@@ -1,5 +1,7 @@
 package com.mgu.java12;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -16,17 +18,20 @@ The merge function divides the sum by the number of elements.
 public class TeeingCollector {
 
     public static void main(String[] args) {
-        var sumOfElements = Stream.of(1, 2, 3, 4, 5)
+        var listOfNumbers = new Integer[]{1, 2, 3, 4, 5};
+        var sumOfElements = Stream.of(listOfNumbers)
                 .collect(Collectors.summingDouble( i -> i));
-        System.out.println(sumOfElements);
-
-        var numberOfElements = Stream.of(1, 2, 3, 4, 5)
+        var numberOfElements = Stream.of(listOfNumbers)
                 .collect(Collectors.counting());
-        System.out.println(numberOfElements);
+        var meanValue = sumOfElements/numberOfElements;
 
-        double mean = Stream.of(1, 2, 3, 4, 5)
+        double mean = Stream.of(listOfNumbers)
                 .collect(Collectors.teeing(Collectors.summingDouble(i -> i),
                         Collectors.counting(), (sum, count) -> sum / count));
-        System.out.println(mean);
+
+        System.out.println("sum  : " + sumOfElements);
+        System.out.println("count: " + numberOfElements);
+        System.out.println("mean : " + meanValue);
+        System.out.println(">>>>>: " + mean);
     }
 }
