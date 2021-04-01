@@ -17,7 +17,8 @@ class NotPredicateSampleTest {
 
         var expectedListOfNonEmptyStrings = Arrays.asList("a", "b");
 
-        assertEquals(expectedListOfNonEmptyStrings, listOfFilteredStringoldWay);
-        assertEquals(expectedListOfNonEmptyStrings, listOfFilteredStringNewWay);
+        assertAll(
+                () -> assertEquals(expectedListOfNonEmptyStrings, listOfFilteredStringoldWay),
+                () -> assertEquals(expectedListOfNonEmptyStrings, listOfFilteredStringNewWay));
     }
 }
