@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import static java.util.function.Predicate.not;
 
 public class NotPredicateSample {
-    static List<String> originals = Arrays.asList("a", "");
+    static List<String> originals = Arrays.asList("a", "", "b");
 
     public static void main(String[] args) {
         oldWay();
