@@ -46,3 +46,7 @@ New way to create unmodifiable list from a **Stream**: **Collectors.toUnmodifiab
 New keyword **var** to create local variables.
 
 New method **orElseThrow()** for **Optional**.
+
+## Java 9
+
+New method **ifPresentOrElse()** for **Optional**.
