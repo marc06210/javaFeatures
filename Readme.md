@@ -1,5 +1,11 @@
 # Main java features
 
+## Java 17
+
+**sealed** classes and **PatternMatching** on **switch** as a preview feature.
+
+
+
 ## Java 16
 
 New type of declaration: **record**.

@@ -8,11 +8,13 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamToListSample {
+	@Test
     void oldWay() {
         List<Integer> oldList = Stream.of(42)
                 .collect(Collectors.toList());
     }
 
+	@Test
     void newWay() {
         List<Integer> newList = Stream.of(42)
                 .toList();

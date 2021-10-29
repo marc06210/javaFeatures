@@ -6,7 +6,7 @@
 
     <groupId>com.mgu.java</groupId>
     <artifactId>features-by-version</artifactId>
-    <version>16.0.0-SNAPSHOT</version>
+    <version>17.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -15,6 +15,7 @@
         <module>java-12</module>
         <module>java-14</module>
         <module>java-16</module>
+        <module>java-17</module>
         <module>java-9</module>
     </modules>
 
